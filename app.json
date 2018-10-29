@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/sign/sign",
+    "pages/vaccine/vaccine",
+    "pages/test/test",
+    "pages/vaccineinfo/vaccineinfo",
+    "pages/info/info",
+    "pages/check/check"
+  ],
+  "window": {
+    "defaultTitle": "家庭医生",
+    "titleBarColor":"skyblue",
+    "titleBarStyle":"white"
+  }
+}

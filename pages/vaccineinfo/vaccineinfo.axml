@@ -1,0 +1,20 @@
+<view class="pages">
+    <view class="title">接种人信息</view>
+    <view class="info">
+        <view class="name">预约人姓名</view>
+        <view class="text">{{name}}</view>
+    </view>
+        <view class="tip"></view>
+     <view class="info">
+        <view class="name">社区医院</view>
+        <view class="text">{{hospital}}</view>
+    </view>
+    <view class="title">疫苗信息</view>
+      <view class="info" onTap="switchinfo">
+          <view class="name">请选择</view>
+          <view class="text">
+               {{vaccineName}}
+          </view>
+        </view>
+    <view class="sure" onTap="sure">确定</view>
+</view>

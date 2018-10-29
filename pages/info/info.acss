@@ -1,0 +1,40 @@
+.page{
+    height: 200rpx;
+}
+.datalist{
+    background-color:white;
+    height: 90rpx;
+    padding: 0 20rpx;
+    width: 710rpx;
+    border-bottom: 1px solid #ccc;
+    line-height: 90rpx;
+}
+.radio-group{
+    height: 90rpx;
+    line-height: 90rpx;
+    float: left;
+}
+.tip{
+    width: 650rpx;
+    float: left;
+}
+.color{
+    background-color: #00a0e9;
+    color: white;
+}
+.radio{
+    height: 90rpx;
+    float: right;
+    /* width: 110rpx; */
+}
+.sure{
+    width: 750rpx;
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    color: white;
+    background-color: #00a0e9;
+    position: fixed;
+    bottom: 0;
+    font-size: 40rpx;
+}

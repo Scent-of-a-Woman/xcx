@@ -1,0 +1,57 @@
+.contain{
+    width: 750rpx;
+    height:1250rpx;
+    background-image: url(https://whjtys-oss.oss-cn-shanghai.aliyuncs.com/%E7%99%BB%E5%BD%95.png);
+    background-size: 100%;
+}
+.account_box,.pwd_box{
+    width: 519rpx;
+    height: 75rpx;
+
+line-height: 75rpx;
+}
+form{
+    position: relative;
+    top: 735rpx;
+    left: 114rpx; 
+    height: 175rpx; 
+     width: 519rpx;
+    border-bottom: 1px solid #00a0e9;
+}
+ .account_box{
+    border-bottom: 1px solid #00a0e9;  
+}
+.pwd_box{
+  margin-top: 20rpx;
+  margin-bottom: 2rpx;
+} 
+.account_img,.pwd_img{
+    height: 45rpx;
+    width: 60rpx;
+    padding-top: 5rpx;
+    float: left;
+}
+.img{
+    height: 50rpx;
+    width: 40rpx;
+}
+input{
+    border: none;
+    float: left;
+    height: 67rpx;
+    width: 428rpx;
+    padding-left: 10rpx;
+    font-size: 30rpx;
+}
+.btn{
+    position: absolute;
+    margin-left: 126rpx;
+    top: 250rpx;
+    width: 300rpx;
+    height: 94rpx;
+    color: white;
+    line-height: 94rpx;
+	background-color: #00a0e9;
+    border-radius: 47rpx;
+    font-family: "微软雅黑";
+}

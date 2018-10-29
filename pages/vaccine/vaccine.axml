@@ -1,0 +1,135 @@
+<view class="page">
+<view class="body">
+  <view class="nav bc_white">
+    <view class="common {{selected?'red':'default'}}" onTap="selected">签约</view>
+    <view class="common {{selected1?'red':'default'}}" onTap="selected1">已完成</view>
+     <view class="common {{selectedt?'red':'default'}}" onTap="selectedt">失效</view>
+    </view>
+ 
+  <view class="{{selected?'show':'hidden'}}">
+         <view class="content">
+<view class="search">
+ <input type="text" onInput="myFunction" placeholder="姓名/手机号码" auto-focus value="{{searchData}}" />
+</view>
+<view class="batch">
+  <button  onTap="defaultSign" > 搜索 </button>
+</view>
+</view>
+    <view class="datalist" a:for="{{info}}">
+          <view class="infoname">
+                <view class="name">{{item.babyName}}</view>
+          </view>
+          <view class="idcard">
+             <view>监护人</view>
+             <view>身份证号</view>
+             <view>{{item.operatorName}}</view>
+             <view>{{item.operatorPhone}}</view>
+          </view>
+          <view class="adress">
+                <view>疫苗名称</view>
+                <view>{{item.vaccineName}}</view>
+          </view>
+          <view class="illness">
+                <view>社区医院</view>
+                <view>{{item.hospitalName}}</view>
+          </view>
+          <view class="time">
+             <view>提交时间</view>
+                <view>{{item.createTime}}</view>
+              </view>
+          <view class="sure" >
+            <view>
+               <view class="down" onTap="sureData" data-vaccineId="{{item.vaccineId}}"  data-id="{{item.id}}" data-babyName="{{item.babyName}}" 
+               data-vaccineName="{{item.vaccineName}}" data-hospitalName="{{item.hospitalName}}">接种完成</view>
+                <view class="nodown" onTap="rejectData" data-id="{{item.id}}">预约失效</view>
+            </view>
+          </view>  
+    </view>
+  </view>
+  <view class="{{selected1?'show':'hidden'}}" >
+         <view class="content">
+<view class="search">
+ <input type="text" onInput="myFunction" placeholder="姓名/手机号码" auto-focus value="{{searchData}}" />
+</view>
+<view class="batch">
+  <button  onTap="defaultComplete" > 搜索 </button>
+</view>
+</view>
+    <view class="completesign datalist" a:for="{{complete}}">
+          <view class="infoname">
+                <view class="name">{{item.babyName}}</view>
+          </view>
+          <view class="idcard">
+             <view>监护人</view>
+             <view>身份证号</view>
+             <view>{{item.operatorName}}</view>
+             <view>{{item.operatorPhone}}</view>
+          </view>
+          <view class="adress">
+                <view>疫苗名称</view>
+                <view>{{item.vaccineName}}</view>
+          </view>
+          <view class="illness">
+                <view>社区医院</view>
+                <view>{{item.hospitalName}}</view>
+          </view>
+          <view class="time">
+             <view>完成时间</view>
+                <view>{{item.updateTime}}</view>
+              </view>
+    </view>
+  </view>
+   <view class="{{selectedt?'show':'hidden'}}">
+          <view class="content">
+<view class="search">
+ <input type="text" onInput="myFunction" placeholder="姓名/手机号码" auto-focus value="{{searchData}}" />
+</view>
+<view class="batch">
+  <button  onTap="defaultReject" > 搜索 </button>
+</view>
+</view>
+      <view class="rejectsign datalist" a:for="{{reject}}">
+          <view class="infoname">
+                <view class="name">{{item.babyName}}</view>
+          </view>
+          <view class="idcard">
+             <view>监护人</view>
+             <view>身份证号</view>
+             <view>{{item.operatorName}}</view>
+             <view>{{item.operatorPhone}}</view>
+          </view>
+          <view class="adress">
+                <view>疫苗名称</view>
+                <view>{{item.vaccineName}}</view>
+          </view>
+          <view class="illness">
+                <view>社区医院</view>
+                <view>{{item.hospitalName}}</view>
+          </view>
+          <view class="time">
+             <view>失效时间</view>
+                <view>{{item.updateTime}}</view>
+              </view>
+    </view>
+   </view>
+</view>
+
+<view class="downtab">
+   <view class="downsign" onTap="downsign">
+        <view class="img" a:if="{{signstate==true}}"><image mode="scaleToFill"     src="../../img/1.png"  /></view>
+        <view class="img" a:elif="{{signstate==false}}"><image mode="scaleToFill"     src="../../img/2.png"  /></view>
+       <view class="title" style="color:{{signstate==true?'#00a0e9':'#ccc'}}">签约</view>
+  </view>
+  <view class="downvaccine" onTap="downvaccine">
+     <view class="img" a:if="{{completestate==true}}"><image mode="scaleToFill" src="../../img/3.png"  /></view>
+     <view class="img" a:elif="{{completestate==false}}"><image mode="scaleToFill" src="../../img/4.png"  /></view>
+        <view class="title" style="color:{{completestate==true?'#00a0e9':'#ccc'}}">疫苗</view> 
+  </view>
+  <view class="downtest" onTap="downtest">
+     <view class="img" a:if="{{rejectstate==true}}"><image mode="scaleToFill" src="../../img/5.png"  /></view>
+     <view class="img" a:elif="{{rejectstate==false}}"><image mode="scaleToFill" src="../../img/6.png"  /></view>
+         <view class="title" style="color:{{rejectstate==true?'#00a0e9':'#ccc'}}">体检</view>
+  </view>
+</view>
+</view>
+ 

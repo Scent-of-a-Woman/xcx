@@ -1,0 +1,178 @@
+page{background-color:#edf0f3;}
+.nav{width:702rpx;height:80rpx;background-color:#fff; display: flex; justify-content:space-around; padding: 0 24rpx;}
+.default{
+    line-height:77rpx;
+    text-align:center;
+    color:#000;
+    font-size:28rpx; 
+}
+.common{
+ float: left;
+ flex: 1;
+}
+.body{
+    padding-bottom: 120rpx;
+}
+.red{
+    line-height:77rpx;
+    text-align:center;
+    color:#00a0e9;
+    font-size:28rpx;
+    border-bottom:3rpx solid #00a0e9;
+}
+.show{display:block;}
+.hidden{display:none;}
+.infoname{
+    height: 99rpx;
+    border-bottom: 1px solid #ccc;
+    padding-left: 148rpx;
+}
+.name{
+line-height: 99rpx;
+float: left;
+font-size: 35rpx;
+margin-right: 45rpx;
+}
+.phone{
+    height: 99rpx;
+line-height: 99rpx;
+float: left;
+font-size: 28rpx;
+}
+.idcard view:nth-of-type(1),.idcard view:nth-of-type(2),.idcard view:nth-of-type(3),.idcard view:nth-of-type(4){
+    float: left;
+}
+.hospital view{
+    float: left;
+}
+.idcard,.hospital {
+ padding-top: 19rpx;
+ height: 81rpx;
+ border-bottom:1px solid #ccc; 
+}
+.idcard view:nth-of-type(1),.idcard view:nth-of-type(3),.hospital view:nth-of-type(1)
+,.hospital view:nth-of-type(3){
+    width:150rpx;
+    padding-left: 10rpx;
+}
+.idcard view:nth-of-type(2),.idcard view:nth-of-type(4),
+.hospital view:nth-of-type(2),.hospital view:nth-of-type(4){
+    width: 490rpx;
+}
+.idcard view:nth-of-type(3),.idcard view:nth-of-type(4)
+,.hospital view:nth-of-type(3),.hospital view:nth-of-type(4){
+    margin-top: 10rpx;
+}
+.adress,.time,.illness{
+    padding-top: 19rpx;
+    height: 81rpx;
+    padding-left: 10rpx;
+    border-bottom: 1px solid #ccc;
+}
+.adress{
+    height: 100rpx;
+}
+.adress view:nth-of-type(1),.time view:nth-of-type(1),.illness view:nth-of-type(1){
+    margin-bottom: 10rpx;
+}
+.adress view:nth-of-type(2){
+    height: 60rpx;
+    overflow: hidden;
+}
+.sure{
+    height: 83rpx;
+    padding-top: 17rpx;
+}
+.sure>view{
+    height: 66rpx;
+    width: 390rpx;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+.down,.nodown{
+ height: 66rpx;
+     width: 172rpx;
+     line-height: 66rpx;
+     border-radius: 5px;
+     color: white;
+     text-align: center;
+}
+.down{   
+     background-color: #00a0e9;
+    }
+.nodown{
+     background-color: red;
+    }
+.completesign .time,.rejectsign .time{
+    border-bottom: none;
+}
+.content{
+        height: 66rpx;
+            margin-top: 10rpx;
+    }
+.search{
+    width: 508rpx;
+    height: 62rpx;
+
+    margin-left: 23rpx;
+    float: left;
+}
+.search input{
+    width: 508rpx;
+    height: 62rpx;
+    border: none;
+     border-radius: 5px;
+    padding-left: 10rpx;
+}
+.batch{
+    width: 172rpx;
+    height: 66rpx;
+    float: left;
+    margin-left: 20rpx;
+}
+.batch button{
+    background-color: #00a0e9;
+    color: white;
+    height: 66rpx;
+    line-height: 66rpx;
+    font-size: 28rpx;
+}
+.datalist{
+    width: 657rpx;
+    margin: auto;
+    height: 630rpx;
+    background-color: #fff;
+    margin-top: 10rpx;
+    padding: 0 23rpx 0 20rpx;
+}
+.completesign,.rejectsign{
+    height: 530rpx;
+}
+.downtab{
+    position: fixed;
+    bottom: 0rpx;
+    width: 750rpx;
+    display: flex;
+}
+.downsign,.downtest,.downvaccine{
+    height: 80rpx;
+    padding-top: 18rpx;
+    border-top: 1px solid #ccc;
+    background-color: white;
+    flex: 1
+}
+.img{
+    height: 40rpx;
+    width: 40rpx;
+    margin: auto;
+}
+image{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    color: #00a0e9;
+    margin-top: 10rpx;
+    text-align: center;
+}

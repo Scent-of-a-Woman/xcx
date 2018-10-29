@@ -1,0 +1,20 @@
+<view class="page">
+    <view class="contain">
+        <form onSubmit="formSubmit" onReset="formReset">
+             <view class="account_box">
+                 <view class="account_img">
+                     <image class="img"  src="https://whjtys-oss.oss-cn-shanghai.aliyuncs.com/%E7%99%BB%E5%BD%95icon.png" mode="scaleToFill" />
+                 </view>
+                  <input type="text" maxlength="10" placeholder="请输入您的帐号" class="account" name="account" />
+             </view>
+             <view class="pwd_box">
+                 <view class="pwd_img">
+                     <image class="img"  
+                     src="https://whjtys-oss.oss-cn-shanghai.aliyuncs.com/%E5%AF%86%E7%A0%81icon.png" mode="scaleToFill" />
+                 </view>
+                <input type="text" maxlength="10" placeholder="请输入您的密码" class="pwd" password name="pwd" />
+             </view>
+            <button formType="submit" class="btn"> 登录 </button>
+        </form>
+    </view>
+</view>

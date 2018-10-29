@@ -1,0 +1,17 @@
+<view class="page">
+    <view class="body">
+        <view  class="datalist" a:for="{{info}}">
+            <view >
+                <checkbox-group class="checkbox-group" onChange="radioChange"   data-id="{{item.id}}"
+                 data-checked="{{item.checked}}" data-vaccineName="{{item.vaccineName}}">
+                <view class="tip">{{item.vaccineName}}</view>
+                <label class="checkbox" >
+                  <checkbox value="{{item.vaccineName}}"   checked="{{item.checked}}"/>
+                </label>
+            </checkbox-group>
+            </view>
+        </view>
+        <view  class="datalist"></view>
+        <view onTap="sure" class="sure">确定</view>
+    </view>
+</view>
